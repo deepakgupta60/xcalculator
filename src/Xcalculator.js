@@ -14,6 +14,9 @@ const Xcalculator = () => {
 
                 calculateValue()
             }
+            else{
+                setResult("Error")
+            }
         }
         else if(value==="C")
         {
@@ -28,7 +31,7 @@ const Xcalculator = () => {
 
     const calculateValue=()=>
     {
-        console.log('tes')
+       
         setResult(eval(input))
     }
 
