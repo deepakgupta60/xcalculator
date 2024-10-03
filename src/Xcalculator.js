@@ -8,9 +8,12 @@ const Xcalculator = () => {
 
 
     const handleClick=(value)=>{
-        if(value==="=")
-        {
-            calculateValue()
+        if(value==="="){
+            if(input)
+            {
+
+                calculateValue()
+            }
         }
         else if(value==="C")
         {
@@ -25,6 +28,7 @@ const Xcalculator = () => {
 
     const calculateValue=()=>
     {
+        console.log('tes')
         setResult(eval(input))
     }
 
